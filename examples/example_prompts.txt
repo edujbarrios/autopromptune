@@ -1,0 +1,30 @@
+# AutoPromTune — Example Prompts
+# ================================
+# These prompts demonstrate the kinds of inputs AutoPromTune is designed to improve.
+# Each "ORIGINAL" is a vague prompt; "EXPECTED IMPROVEMENT" shows the typical tuning direction.
+#
+# Part of MSc AI thesis research — Eduardo J. Barrios (@edujbarrios)
+
+# ── Example 1 ──────────────────────────────────────────────────────────────
+ORIGINAL:   Describe if there is a blue ball on the image
+EXPECTED:   Describe if there is a blue, round three-dimensional object (sphere) visible in the image
+
+# ── Example 2 ──────────────────────────────────────────────────────────────
+ORIGINAL:   Check if the animal is near the thing on the left
+EXPECTED:   Check if the animal (any living creature) is spatially close to the object or item located on the left side of the image
+
+# ── Example 3 ──────────────────────────────────────────────────────────────
+ORIGINAL:   Tell me if the object looks old
+EXPECTED:   Tell me if the object exhibits visual signs of age or wear, such as discoloration, cracks, rust, or outdated design
+
+# ── Example 4 ──────────────────────────────────────────────────────────────
+ORIGINAL:   Is the person doing an activity outside?
+EXPECTED:   Is the person (any human individual) performing a physical or social activity in an outdoor environment (open air, not indoors)?
+
+# ── Example 5 ──────────────────────────────────────────────────────────────
+ORIGINAL:   Summarize the main idea of the text
+EXPECTED:   Provide a concise summary (1-3 sentences) capturing the central argument or key message of the provided text passage
+
+# ── Example 6 ──────────────────────────────────────────────────────────────
+ORIGINAL:   Is the thing in the picture dangerous?
+EXPECTED:   Does the object or entity depicted in the picture pose a potential physical, chemical, or biological hazard to humans?
