@@ -1,5 +1,7 @@
 # AutoPromTune
 
+![AutoPromTune](assets/image.png)
+
 ## Overview
 
 **AutoPromTune** is a Python tool that automatically improves user-written prompts by identifying vague, ambiguous, or underspecified terms and replacing them with precise, semantically richer descriptions.
@@ -85,14 +87,6 @@ AutoPromTune runs in **two LLM passes**, both driven by Jinja2 templates:
 
 The templates are plain text files with `{{ variable }}` and `{% for %}` blocks — edit them freely to adjust the LLM's behaviour without changing Python code.
 
----
-
-## Research Context
-
-This tool is developed as part of the MSc thesis *"Automated Prompt Engineering via Semantic Decomposition"* at the Faculty of Computer Science. AutoPromTune explores how LLM self-reflection can be leveraged to iteratively disambiguate natural-language prompts, improving downstream task performance in vision-language and instruction-following models.
-
----
 
 ## License
-
-MIT © 2026 Eduardo J. Barrios
+ © 2026 Eduardo J. Barrios
