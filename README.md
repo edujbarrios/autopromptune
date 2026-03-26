@@ -6,19 +6,7 @@
 
 **AutoPromTune** is a Python tool that automatically improves user-written prompts by identifying vague, ambiguous, or underspecified terms and replacing them with precise, semantically richer descriptions.
 
-Given a prompt like:
-
-```
-"Describe if there is a blue ball on the image"
-```
-
-AutoPromTune reasons that *"ball"* is underspecified and rewrites the prompt as:
-
-```
-"Describe if there is a blue, round three-dimensional object (sphere) on the image"
-```
-
-It uses **large language models via [llm7.io](https://llm7.io)** and **Jinja2 (`.j2`) templates** to keep the meta-prompts fully editable without touching Python code.
+It uses **large language models via an API** and **Jinja2 (`.j2`) templates** to keep the meta-prompts fully editable without touching Python code.
 
 **Part of my research in the MSc final thesis on Artificial Intelligence**
 *Author: Eduardo J. Barrios — GitHub [@edujbarrios](https://github.com/edujbarrios)*
