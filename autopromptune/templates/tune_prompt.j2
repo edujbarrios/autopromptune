@@ -1,0 +1,24 @@
+You are an expert prompt engineer. Your task is to rewrite the original prompt by replacing all identified vague terms with their precise descriptions.
+
+Original prompt:
+---
+{{ original_prompt }}
+---
+
+{% if vague_terms %}
+Identified vague terms and their precise replacements:
+{% for item in vague_terms %}
+• "{{ item.term }}"
+  Reason it is vague: {{ item.reason }}
+  Replace with: {{ item.replacement }}
+{% endfor %}
+
+Instructions:
+1. Substitute each vague term with its precise replacement exactly where it appears.
+2. Preserve the grammatical structure and overall intent of the original prompt.
+3. The rewritten prompt must read naturally as a single coherent instruction.
+4. Do NOT add extra commentary, caveats, or meta-text — return ONLY the rewritten prompt.
+{% else %}
+No vague terms were identified. The original prompt is already precise.
+Return the original prompt unchanged.
+{% endif %}
