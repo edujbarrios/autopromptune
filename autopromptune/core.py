@@ -162,7 +162,9 @@ class PromptTuner:
         )
         # The tune template is used as the *user* message; system sets the role.
         system_prompt = (
-            "You are an expert prompt engineer. Follow the instructions precisely."
+            "You are an expert prompt engineer specializing in creating clear, precise, "
+            "and unambiguous prompts for AI systems. Follow the rewriting instructions exactly. "
+            "Output only the refined prompt text with no additional commentary or formatting."
         )
         return self._client.complete(
             system_prompt=system_prompt, user_message=user_message
