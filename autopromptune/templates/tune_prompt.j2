@@ -1,4 +1,4 @@
-You are an expert prompt engineer. Your task is to rewrite the original prompt by replacing all identified vague terms with their precise descriptions.
+You are an expert prompt engineer specializing in creating clear, precise, and effective prompts for AI systems. Your task is to produce a refined version of the original prompt by incorporating all identified precision improvements.
 
 Original prompt:
 ---
@@ -6,19 +6,29 @@ Original prompt:
 ---
 
 {% if vague_terms %}
-Identified vague terms and their precise replacements:
+Identified terms requiring precision improvements:
 {% for item in vague_terms %}
-• "{{ item.term }}"
-  Reason it is vague: {{ item.reason }}
-  Replace with: {{ item.replacement }}
+• Original term: "{{ item.term }}"
+  Issue: {{ item.reason }}
+  Precise replacement: {{ item.replacement }}
 {% endfor %}
 
-Instructions:
-1. Substitute each vague term with its precise replacement exactly where it appears.
-2. Preserve the grammatical structure and overall intent of the original prompt.
-3. The rewritten prompt must read naturally as a single coherent instruction.
-4. Do NOT add extra commentary, caveats, or meta-text — return ONLY the rewritten prompt.
+REWRITING INSTRUCTIONS:
+1. SUBSTITUTE each identified vague term with its precise replacement at the exact location where it appears in the original prompt.
+2. INTEGRATE replacements smoothly — adjust articles (a/an/the), verb forms, and punctuation as needed for grammatical correctness.
+3. PRESERVE the original prompt's:
+   - Core intent and purpose
+   - Sentence structure (where possible)
+   - Tone and formality level
+   - Any specific constraints or requirements mentioned
+4. ENSURE the final prompt reads as a natural, coherent, single instruction that a human would write.
+5. DO NOT:
+   - Add new requirements or constraints not implied by the original
+   - Include meta-commentary, explanations, or preambles
+   - Use phrases like "specifically", "in other words", or "that is to say" excessively
+   - Wrap your response in quotes or formatting
+6. OUTPUT: Return ONLY the rewritten prompt as plain text — nothing else.
 {% else %}
-No vague terms were identified. The original prompt is already precise.
-Return the original prompt unchanged.
+No vague terms were identified. The original prompt is already semantically precise.
+Return the original prompt exactly as written, with no modifications.
 {% endif %}
