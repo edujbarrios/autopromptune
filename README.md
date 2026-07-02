@@ -50,16 +50,20 @@ cp .env.example .env
 # The default key "unused" works with llm7.io — no registration needed.
 ```
 
-### 3. Run the web UI
-
-```bash
-streamlit run app.py
-```
-
-### 4. Run via CLI
+### 3. Run via CLI
 
 ```bash
 python cli.py tune "Describe if there is a blue ball on the image"
+```
+
+---
+
+## GUI Usage (Optional)
+
+If you want to use the web-based interface, you can run the Streamlit app:
+
+```bash
+streamlit run app.py
 ```
 
 ---
