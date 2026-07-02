@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+type: software
+title: "AutoPromTune"
+authors:
+  - family-names: "Barrios"
+    given-names: "Eduardo J."
+    orcid: "https://orcid.org"
+repository-code: "https://github.com/edujbarrios/autopromptune"
+url: "https://github.com/edujbarrios/autopromptune"
+abstract: "AutoPromTune is a Python tool that automatically improves user-written prompts by identifying vague, ambiguous, or underspecified terms and replacing them with precise, semantically richer descriptions. It uses large language models via an API and Jinja2 templates to keep meta-prompts fully editable."
+keywords:
+  - "prompt engineering"
+  - "LLM"
+  - "AI"
+  - "prompt optimization"
+license: "Unlicense"
+version: "0.1.0"
+date-released: "2026-01-01"
